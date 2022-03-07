@@ -16,6 +16,8 @@ int main()
     // Initialise the digital pin LED1 as an output
     DigitalOut led(LED1);
 
+    //Test commit
+
     while (true) {
         led = !led;
         thread_sleep_for(BLINKING_RATE_MS);

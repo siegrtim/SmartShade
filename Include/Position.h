@@ -20,7 +20,7 @@ class Position {
         
                 Position(float x_Coordinate, float y_Coordinate, float angle);
         virtual ~Position();
-        void    setPosition(float x_Coordinate, float y_Coordinate, float angle);
+        void    setnewPosition(float x_Coordinate, float y_Coordinate, float angle);
         float   getXCoordinate();
         float   getYCoordinate();
         float   getAngle();
@@ -28,9 +28,12 @@ class Position {
         
     private:
         
-        int x;
-        int y;
-        int angle;
+        float x;
+        float y;
+        float angle;
+        float h;                    // Höhe des Sonnenschirmes in [m]
+        float Altitude, Azimut;     // Sonnenstand
+        //void CalculatePosition(void);
 
 };
 

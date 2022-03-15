@@ -15,8 +15,8 @@ using namespace std;
  * @param y-Koordinate from position
  * @param angle from position
  */
-Position::Position(float x_Coordinate, float y_Coordinate, float angle){
-    
+Position::Position(float x_Coordinate, float y_Coordinate, float angle){   
+
     this->x = x_Coordinate;
     this->y = y_Coordinate;
     this->angle = angle;
@@ -30,7 +30,7 @@ Position::~Position() {}
 /**
  * This method writes the position
  */
-void Position::setPosition(float x_Coordinate, float y_Coordinate, float angle) {
+void Position::setnewPosition(float x_Coordinate, float y_Coordinate, float angle) {
     
     this->x = x_Coordinate;
     this->y = y_Coordinate;
@@ -60,11 +60,19 @@ float Position::getAngle() {
     return this->angle;
 }
 
+//void calculatePosition(void){    
+//    float a;
+//    h = 2;                          // Höhe Sonnenschrim in [m]
+//    a = h/tan(Altitude);
+//    this.x = a*sin(Azimut);
+//    this.y = a*cos(Azimut);    
+//   this.angle = Altitide;
+//}
+
 /**
  * The empty operator is a shorthand notation of the <code>read()</code> method.
  */
-//Position::operator float() {
-    
+//Position::operator float() {    
 //    return read();
 //}
 //
